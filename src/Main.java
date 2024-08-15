@@ -3,53 +3,43 @@ public class Main {
         //task1-2
         boolean clientOS = true;
         int clientDeviceYear = 2015;
-        if (clientOS&&clientDeviceYear>=2015) {
+        if (clientOS && clientDeviceYear >= 2015) {
             System.out.println("Установите версию приложения для Android по ссылке");
-        }
-        else if(!clientOS&&clientDeviceYear>=2015){
+        } else if (!clientOS && clientDeviceYear >= 2015) {
             System.out.println("Установите версию приложения для iOS по ссылке");
-        }
-        else if(clientOS&&clientDeviceYear<=2015){
+        } else if (clientOS && clientDeviceYear <= 2015) {
             System.out.println("Установите облегченную версию приложения для Android по ссылке");
-        }
-        else if(!clientOS&&clientDeviceYear<=2015){
+        } else if (!clientOS && clientDeviceYear <= 2015) {
             System.out.println("Установите облегченную версию приложения для iOS по ссылке");
         }
         //task3
         int year = 2021;
-        int yearsFromOpening = year-1584;
-        if(year<1584){
+        int yearsFromOpening = year - 1584;
+        if (year < 1584) {
             System.out.println("В " + year + " году еще не знали про весокосные года");
-        }
-        else if (yearsFromOpening%4!=0){
+        } else if (yearsFromOpening % 4 != 0) {
             System.out.println(year + " не весокосный год");
-        }
-        else if (yearsFromOpening%400==0){
+        } else if (yearsFromOpening % 400 == 0) {
             System.out.println(year + " весокосный год");
-        }
-        else if (yearsFromOpening%100==0){
+        } else if (yearsFromOpening % 100 == 0) {
             System.out.println(year + " не весокосный год");
-        }
-        else {
+        } else {
             System.out.println(year + " весокосный год");
         }
         //task4
         int deliveryDistance = 95;
-        if (deliveryDistance<20){
+        if (deliveryDistance < 20) {
             System.out.println("Потребуется дней: 1");
-        }
-        else if (deliveryDistance<60) {
+        } else if (deliveryDistance < 60) {
             System.out.println("Потребуется дней: 2");
-        }
-        else if (deliveryDistance<100) {
+        } else if (deliveryDistance < 100) {
             System.out.println("Потребуется дней: 3");
-        }
-        else {
+        } else {
             System.out.println("Доставки нет");
         }
         //task5
         int monthNumber = 6;
-        switch (monthNumber){
+        switch (monthNumber) {
             case 1:
                 System.out.println("Зима");
                 break;
