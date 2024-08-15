@@ -79,7 +79,5 @@ public class Main {
             default:
                 System.out.println("Введите коректный номер месяца");
         }
-
-
     }
 }
